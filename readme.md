@@ -1,2 +1,2 @@
-dive into deep learning  
-Course Notes
+dive into deep learning
+JUST DO IT  
