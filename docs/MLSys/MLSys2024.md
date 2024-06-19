@@ -1,6 +1,9 @@
 # Day1
-## GenAI Efficiency is About More than Models
+## [GenAI Efficiency is About More than Models](https://mlsys.org/media/mlsys-2024/Slides/2668.pdf)
 Kurt Keutzer@UC Berkeley  
+
+Identify new research directions before others do  
+– The first person to the beach picks up the most diamonds  
 
 ML/DL Eras:  
 • ML Era 1: Orchestration of statistics gave us Machine Learning  
@@ -11,8 +14,10 @@ ML/DL Eras:
 • ML Era 6: Orchestration of Compound GenAI systems give us …. What?  
 
 ![mleras.png](images/mleras.png)
+![dsp.png](images/dsp.png)
 
 ## Towards Fast and Affordable Serving Systems for Large Language Models
+
 
 ## Memory-Efficient LLM Training
 
@@ -22,8 +27,27 @@ ML/DL Eras:
 
 # Day2
 ## Quantization and Compression 1
-### AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration
-***Best Paper Award***  
+### [AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration](https://mlsys.org/virtual/2024/poster/2653)
+***Best Paper Award***
+problems:
+challenge for LLM deployment: colossal size, hard ro serve on edge
+
+solution:
+1. quatization can reduce deployment costs  
+```
+FP16: 140GB memory, need 2*80GB A100 GPUs
+INT8: 70GB memory, need 1*80GB A100 GPUs
+INT4: 35GB memory, need 1*40GB A100 GPUs
+```
+Previous Work: W8A8 SmoothQuant
+![W8A8SmoothQuant.png](images/W8A8SmoothQuant.png)
+
+Low-bit weight quantization brings speedup
+![LowbitWieghtQuant.png](images/LowbitWieghtQuant.png)
+
+AWQ:Active-aware Weight Quantization
+![ActiveawareWeightQuant.png](images/ActiveawareWeightQuant.png)
+
 
 ### Possible Impossibilities and Impossible Possibilities
 Yejin Choi  
