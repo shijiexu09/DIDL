@@ -29,7 +29,7 @@ ML/DL Eras:
 ## Quantization and Compression 1
 ### [AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration](https://mlsys.org/virtual/2024/poster/2653)
 ***Best Paper Award***
-problems:
+Question:
 challenge for LLM deployment: colossal size, hard ro serve on edge
 
 solution:
@@ -39,15 +39,19 @@ FP16: 140GB memory, need 2*80GB A100 GPUs
 INT8: 70GB memory, need 1*80GB A100 GPUs
 INT4: 35GB memory, need 1*40GB A100 GPUs
 ```
-Previous Work: W8A8 SmoothQuant
+2. Previous Work: W8A8 SmoothQuant
 ![W8A8SmoothQuant.png](images/W8A8SmoothQuant.png)
 
-Low-bit weight quantization brings speedup
+3. Low-bit weight quantization brings speedup
 ![LowbitWieghtQuant.png](images/LowbitWieghtQuant.png)
 
-AWQ:Active-aware Weight Quantization
-![ActiveawareWeightQuant.png](images/ActiveawareWeightQuant.png)
+4. AWQ:Activation-aware Weight Quantization
+![AWQ.png](images/AWQ.png)
+![AWQSacling.png](images/AWQSacling.png)
 
+5. Summary
+![awqsummary.png](images/awqsummary.png)
+![awqsummarynext.png](images/awqsummarynext.png)
 
 ### Possible Impossibilities and Impossible Possibilities
 Yejin Choi  
@@ -59,8 +63,23 @@ Yejin Choi
 ### SLoRA: Scalable Serving of Thousands of LoRA Adapters
 
 ## Parallel and Distributed 1
-### DiffusionPipe: Training Large Diffusion Models with Efficient Pipelines
-### Distributed Matrix-Based Sampling for Graph Neural Network Training
+### [DiffusionPipe: Training Large Diffusion Models with Efficient Pipelines](https://mlsys.org/virtual/2024/poster/2636)
+https://mlsys.org/media/mlsys-2024/Slides/2636_X1xLHC2.pdf  
+Question
+![DiffusionPipeQuestion.png](images/DiffusionPipeQuestion.png)
+![DiffusionPipeQuestion2.png](images/DiffusionPipeQuestion2.png)
+
+System design
+![DiffusionPipeSystem.png](images/DiffusionPipeSystem.png)
+
+Summary
+![DiffusionPipeSummary.png](images/DiffusionPipeSummary.png)
+
+
+### [Distributed Matrix-Based Sampling for Graph Neural Network Training](https://mlsys.org/virtual/2024/poster/2656)
+Question
+![GNNIssues.png](images/GNNIssues.png)
+
 ### L-GreCo: Layerwise-adaptive Gradient Compression For Efficient Data-parallel Deep Learning
 
 ## Privacy and security
